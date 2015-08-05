@@ -3,18 +3,32 @@
   <head>
     <title>Object Dance Party</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href='http://fonts.googleapis.com/css?family=Frijole' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:900' rel='stylesheet' type='text/css'>
     <script src="lib/jquery.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
-    <script src="src/ballDancer.js"></script>
+    <script src="src/spinner.js"></script>
     <script src="src/rockDancer.js"></script>
+    <script src="src/flyDancer.js"></script>
+    <script src="src/sunshineDancer.js"></script>
   </head>
   <body>
+    <div ID="title">
+       Fancy Dance Party
+    </div>
     <div class="topbar">
-      <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBallDancer">add a ballet dancer</a> 
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeRockDancer">add a rock dancer</a>    </div>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">Monster</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="spinner">Spinner</a> 
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeRockDancer">Human dancer</a> 
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="flyDancer">Happy dancer</a> 
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="sunshineDancer">Sunshine</a> 
+      <a href="#" class="motionButton" data-dancer-motion-name="lineUp">Line Up</a>    </div>
     <script src="src/init.js"></script>
+    <footer>
+      <audio controls autoplay loop>
+        <source src="src/Asset/BlankSpace.mp4">
+      </audio>
+    </footer>
   </body>
 </html>

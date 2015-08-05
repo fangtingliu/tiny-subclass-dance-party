@@ -1,27 +1,92 @@
 body, html{
-  height:100%;
+  height:80%;
+  width: 100%;
 }
 body{
   margin: 0px;
+  background: url(src/3d1.jpg);
   background-color:#444;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
-  color: lightblue;
+  text-decoration: none;
 }
-.title, .addDancerButton{
+#title{
+  text-align:center;
+  font-size:36px;
+  color: rgb(0,255,255);
+  font-family: 'Frijole', cursive;
+}
+
+.addDancerButton{
   padding:5px 12px;
   float:right;
+  color:rgb(0,255,255);
+  font-family:'Elsie Swash', cursive;
+}
+.motionButton{
+  padding:5px 12px;
+  float:left;
+  color:rgb(0,255,255);
+  font-family: 'Frijole', cursive;
 }
 .topbar{
   height:32px;
-  background-color: #555;
-}
-.title{
-  background-color: #777;
 }
 .dancer{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+}
+
+.rockDancer,
+.blinkyDancer,
+.flyDancer, 
+.sunshineDancer,
+.ballDancer{
+  border:none;
+  height: 60%;
+  width: 60%;
+  position:absolute;
+}
+
+#spinner,
+.spinner {
+    position: absolute;
+    margin: 0;
+    -webkit-animation:spin 0.5s linear infinite;
+    -moz-animation:spin 0.5s linear infinite;
+    animation:spin 0.5s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); 
+  transform:rotate(360deg); } }
+
+#welcome {
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    -webkit-transform: translate(540px,-200px);
+    -moz-transform: translate(540px,-200px);
+    -o-transform: translate(540px,-200px);
+    -ms-transform: translate(540px,-200px);
+    transform: translate(540px,-200px);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+footer {
+  clear: both;
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  margin-bottom: 0px;
+  width: 100%;
+  text-align: center;
 }
